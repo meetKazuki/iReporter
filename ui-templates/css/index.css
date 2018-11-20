@@ -115,3 +115,41 @@ header {
   color: #9a9b94;
   transition: 0.3s ease-in-out;
 }
+
+/* *** *** *** Footer Styles *** *** *** */
+footer {
+  background-color: #625757;
+  padding: 5vh 0 10vh;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 5px;
+  color: #f9f9f9;
+}
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.social-link {
+  color: #f9f9f9;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 1em;
+  line-height: 1;
+  padding-top: 0.25em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 1.5em;
+}
+.social-link:hover {
+  color: #bcbab8;
+  transition: all 0.3s ease;
+}
