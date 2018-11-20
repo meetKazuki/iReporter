@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/dh-records.css">
+  <title>Dashboard | Records</title>
+</head>
+<body>
+  <aside id="side-menu">
+    <nav>
+      <a href="dh-overview.html"><i class="far fa-eye"></i> Overview</a>
+      <a href="dh-records.html" class="active"><i class="far fa-file-alt"></i> Your Records</a>
+      <a href="#"><i class="fas fa-user"></i> Profile</a>
+      <a href="#"><i class="fas fa-hammer"></i> Admin</a>
+    </nav>
+  </aside>
+
+  <header>
+    <div class="search-area">
+      <i class="fas fa-search"></i> <input type="text">
+    </div>
+
+    <div class="user-area">
+      <a href="../index.html">HOME</a>
+      <a href="#"><i class="fas fa-plus" id="button-modal"></i></a>
+      <a href="#" class="notification"><i class="far fa-bell"></i><span class="circle">3</span></a>
+      <a href="signin.html">SIGN OUT</a>
+    </div>
+  </header>
+
+<div class="form-container" id="display-modal">
+  <form action="">
+    <div class="record-block">
+      <div class="record">
+        <input type="text" placeholder="Enter the title summary">
+      </div>
+    </div>
+
+    <div class="record-block">
+      <div class="record">
+        <input type="text" placeholder="Enter location">
+      </div>
+    </div>
+
+    <div class="record-block">
+      <div class="record">
+        <select name="" id="">
+          <option value="record-type">Type of Intervention</option>
+          <option value="intervention">Intervention</option>
+          <option value="red-flag">Red-flag</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="record-block">
+      <div class="record">
+        <textarea placeholder="Describe you issue"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="button-block">
+        <button id="close-button">Cancel</button>
+        <button>Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+  <main class="container">
+    <div class="record-card">
+      <div class="description">
+        <h1>My Boss Launders Money</h1>
+        <h2><i class="fas fa-map-marker-alt"></i><span class="loc">Osborn Towers, Ikoyi</span></h2>
+        <h3 class="type-reddish">Red-flag</h3>
+        <p>Financial impropriety is being carried out in my establishment.
+          I believe this establishment might be a front for serious drug racketeering
+          and money laundering. The account books are falsified. Please investigate
+        </p>
+        <div class="control">
+          <button class="blue">Update</button>
+          <button class="red">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="record-card">
+      <div class="description">
+        <h1>We don't have Light</h1>
+        <h2><i class="fas fa-map-marker-alt"></i><span class="loc">12 McNeil Street Sabo-Yaba, Lagos</span></h2>        
+        <h3 class="type-bluish">Intervention</h3>
+        <p>For the past 4 months, we don't have light. The transformer blew
+          up one day and everything went to smokes. All effort to rectify it
+          has been met with no response. Come to our aid. Power outage has caused
+          a lot of inconveniences for the residents of this area.
+        </p>
+        <div class="control">
+          <button class="blue">Update</button>
+          <button class="red">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="record-card">
+      <div class="description">
+        <h1>#NextLevel Daura</h1>
+        <h2><i class="fas fa-map-marker-alt"></i><span class="loc">N/A</span></h2>        
+        <h3 class="type-bluish">Intervention</h3>
+        <p>
+          He must go back. Why is he still there? Take back our rights, take back
+          our progress. Send this old hags home! We own this. Let's make our country
+          great.
+        </p>
+        <div class="control">
+          <button class="blue">Update</button>
+          <button class="red">Delete</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/record-form.js"></script>
+</body>
+</html>
