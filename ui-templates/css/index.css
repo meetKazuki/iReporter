@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+strong, b {
+  font-weight: bold;
+}
+em, i {
+  font-style: italic;
+}
+a img {
+  border: none;
+}
+/* END RESET*/
+
+/* *** *** *** Global Styles *** *** *** */
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #f9f9f9;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+/* *** *** *** Header Styles *** *** *** */
+header {
+  color: #9d8f8f;
+  width: 100%;
+}
+/* nav-menu styles */
+.header-nav {
+  float: right;
+  padding: 3vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 0.8em;
+}
+.header-nav > li ~ li {
+  border-left: 2px solid #bcbab8;
+  padding-left: 1em;
+}
+.header-nav a {
+  color: #625757;
+  text-decoration: none;
+}
+.nav-links a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: #9a9b94;
+}
+/* header logo styles */
+.header-logo {
+  color: #52524e;
+  display: block;
+  font-style: oblique;
+  font-size: 1.5rem;
+  font-weight: 900;
+  height: 10vh;
+  left: 20px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 2vh;
+}
+.header-logo span {
+  text-transform: uppercase;
+}
+.header-logo:hover {
+  color: #9a9b94;
+  transition: 0.3s ease-in-out;
+}
