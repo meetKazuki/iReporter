@@ -149,8 +149,8 @@ footer {
   text-align: center;
 }
 footer p {
-  margin-bottom: 5px;
   color: #f9f9f9;
+  margin-bottom: 5px;
 }
 .social-list {
   list-style: none;
@@ -178,6 +178,73 @@ footer p {
 .social-link:hover {
   color: #bcbab8;
   transition: all 0.3s ease;
+}
+
+/* *** *** *** Hero Styles *** *** *** */
+.full-hero {
+  background-color: #bcbab8;
+  background-size: cover;
+  height: 90vh;
+  padding-top: 10vh;
+}
+.full-hero:after {
+  border: 10px solid;
+  border-color: #f9f9f9 transparent transparent;
+  bottom: 2vh;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 0;
+}
+/* site banner */
+.hero-home {
+  background-image: url(../images/1_sWIkN6u3uVQyAJY9CbtUdw.jpeg);
+  background-position: center top;
+  opacity: .7;
+  transition: all 0.7s ease-in-out;
+}
+.hero-home:hover {
+  background-image: url(../images/2017085_univ_lsr_xl.jpg);
+  background-position: center top;
+  transition: all 0.7s ease-in-out;
+}
+.hero-content {
+  color: #f9f9f9;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  color: #f9f9f9;
+  font-size: 7vw;
+  font-weight: 200;
+  margin-bottom: 0.25em;
+}
+.hero-content span {
+  text-transform: uppercase;
+}
+.hero-content p {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.hero-content a {
+  border: 3px solid #9a9b94;
+  border-radius: 3px;
+  color: #f9f9f9;
+  display: inline-block;
+  font-size: 28px;
+  margin-right: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.hero-content a:hover,
+.hero-content a:active {
+  background-color: #625757;
+  transition: all 0.3s ease-in;
 }
 
 /* *** *** *** Callout Styles *** *** *** */
