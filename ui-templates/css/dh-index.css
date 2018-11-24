@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 a,abbr,acronym,address,applet,article,aside,audio,
 b,big,blockquote,body,canvas,caption,center,cite,
 code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,
@@ -54,6 +55,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* *** *** * Global Styles * *** *** */
 #side-menu {
   background: #4a4a48;
   height: 100vh;
@@ -99,4 +101,86 @@ body {
 #side-menu nav a.active .far,
 #side-menu nav a.active .fas {
   color: #d34c26;
+}
+
+/* *** *** * Header Styles * *** *** */
+header {
+  background: #fff;
+  margin-left: 280px;
+  padding: 20px;
+}
+header .search-area {
+  display: inline-block;
+  width: 50%;
+}
+header .search-area .fas {
+  color: #7c7575;
+}
+header .search-area input[type=text] {
+  background: transparent;
+  border: none;
+  color: #0c907d;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  width: 80%;
+}
+header .search-area input[type=text]:hover {
+  background: #b7b7b7;
+}
+header .user-area {
+  display: inline-block;
+  float: right;
+  padding: 10px;
+}
+input:focus,
+input:active,
+textarea:focus {
+  background: #c19898;
+  outline: none;
+}
+header .user-area a {
+  color: #625757;
+  display: inline-block;
+  height: 30px;
+  padding-right: 20px;
+  text-decoration: none;
+  /* top: 0; */
+  vertical-align: top;
+}
+/* class === add */
+header .user-area a.notification {
+  font-size: 20px;
+  /* padding-top: 5px; */
+  position: relative;
+}
+header .user-area a.notification .circle {
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  height: 12px;
+  left: 7px;
+  position: absolute;
+  text-align: center;
+  top: 3px;
+  width: 12px;
+}
+header .user-area a .user-image {
+  background: url(../images/faces.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  height: 30px;
+  margin-right: 10px;
+  width: 30px;
+}
+header .user-area a .fa-caret-down {
+  position: relative;
+  top: -8px;
 }
