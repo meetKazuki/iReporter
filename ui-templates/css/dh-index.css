@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+
 a,abbr,acronym,address,applet,article,aside,audio,
 b,big,blockquote,body,canvas,caption,center,cite,
 code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,
@@ -107,7 +108,7 @@ body {
 header {
   background: #fff;
   margin-left: 280px;
-  padding: 20px;
+  padding: 5px;
 }
 header .search-area {
   display: inline-block;
@@ -129,16 +130,16 @@ header .search-area input[type=text] {
 header .search-area input[type=text]:hover {
   background: #b7b7b7;
 }
-header .user-area {
-  display: inline-block;
-  float: right;
-  padding: 10px;
-}
 input:focus,
 input:active,
 textarea:focus {
   background: #c19898;
   outline: none;
+}
+header .user-area {
+  display: inline-block;
+  float: right;
+  padding: 10px;
 }
 header .user-area a {
   color: #625757;
@@ -146,13 +147,12 @@ header .user-area a {
   height: 30px;
   padding-right: 20px;
   text-decoration: none;
-  /* top: 0; */
   vertical-align: top;
 }
 /* class === add */
 header .user-area a.notification {
   font-size: 20px;
-  /* padding-top: 5px; */
+  /* padding-top: 3px; */
   position: relative;
 }
 header .user-area a.notification .circle {
@@ -162,10 +162,10 @@ header .user-area a.notification .circle {
   display: inline-block;
   font-size: 11px;
   height: 12px;
-  left: 7px;
+  left: 5px;
   position: absolute;
   text-align: center;
-  top: 3px;
+  /* top: 3px; */
   width: 12px;
 }
 header .user-area a .user-image {
@@ -183,4 +183,117 @@ header .user-area a .user-image {
 header .user-area a .fa-caret-down {
   position: relative;
   top: -8px;
+}
+
+/* *** *** * Profile Card Styles * *** *** */
+#content-area {
+  margin-left: 280px;
+  padding: 15px;
+}
+#content-area .heading h1 {
+  color: #64638f;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#content-area .heading p {
+  color: #373640;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+#content-area .cards {
+  overflow: auto;
+  margin-bottom: 30px;
+}
+#content-area .cards .card {
+  background: #fff;
+  border-radius: 5px;
+  overflow: auto;
+  padding: 20px;
+}
+#content-area .cards .card .user-image {
+  background: url(../images/faces.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  height: 115px;
+  margin: 0 auto;
+  width: 115px;
+}
+#content-area .cards .card .user-name {
+  color: #951555;
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: center;
+}
+#content-area .cards .card .user-title {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+} /* f8b500; a20e0e */
+/* Issues Summary Styles */
+#content-area .cards .card h5 {
+  font-size: .9rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.issues {
+  margin: 13px;
+  padding: 8px;
+}
+
+
+/* *** *** * Table Styles * *** *** */
+table {
+  width: 100%;
+}
+table thead {
+  background: #373640;
+}
+table thead th {
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 15px 10px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+table tbody {
+  background: #fff;
+  font-size: 0.8rem;
+}
+table tbody td {
+  color: #5ea3a3;
+  padding: 10px 5px;
+}
+
+/* col-md Styles */
+.col-md-4 {
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+  width: 33.33%;
+}
+.col-md-8 {
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+}
+.col-md-12 {
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+  width: 100%;
 }
