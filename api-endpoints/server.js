@@ -6,6 +6,22 @@ const app = express();
 
 app.use(express.json());
 
+// welcome!
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 200,
+    message: 'Endpoints locked! Welcome to this space',
+  });
+});
+
+/**
+ * /red-flag endpoints
+ */
+// create a red-flag record
+app.post('/api/v1/red-flags', Incident.create);
+// get all red-flags
+app.get('/api/v1/red-flags', Incident.getAll);
+
 /**
  * /User endpoints
  */
@@ -19,14 +35,6 @@ app.get('/api/v1/users/:userId', User.getOne);
 app.patch('/api/v1/users/:userId', User.update);
 // delete a particular user
 app.delete('/api/v1/users/:userId', User.delete);
-
-/**
- * /red-flag endpoints
- */
-// create a red-flag record
-app.post('/api/v1/red-flags', Incident.create);
-// get all red-flags
-// app.get('/red-flags', Incident.getAll);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => { console.log(`Server running at ${port}.`); });
