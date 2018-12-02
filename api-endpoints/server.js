@@ -10,7 +10,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.status(200).json({
     status: 200,
-    message: 'Endpoints locked! Welcome to this space',
+    message: 'Endpoints locked! Welcome to this space.',
   });
 });
 
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 // create a red-flag record
 app.post('/api/v1/red-flags', Incident.create);
 // get all red-flags
-app.get('/api/v1/red-flags', Incident.getAll);
+// app.get('/api/v1/red-flags', Incident.getAll);
 
 /**
  * /User endpoints

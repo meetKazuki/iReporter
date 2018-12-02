@@ -19,12 +19,6 @@ const Incident = {
       data: incident,
     });
   },
-
-  // create a GET/red-flags request
-  // getAll(req, res) {
-  //   const incidents = Incident.findAll();
-  //   return res.status(200).json({ status: 200, incidents });
-  // },
 };
 
 export default Incident;

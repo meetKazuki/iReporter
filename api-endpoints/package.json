@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine",
+    "test": "mocha",
     "build": "babel server.js --out-dir build",
     "dev-start": "babel-watch server.js"
   },
@@ -19,12 +19,13 @@
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "jasmine": "^3.3.0"
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
   },
   "dependencies": {
     "express": "^4.16.4",
     "moment": "^2.22.2",
-    "request": "^2.88.0",
     "uuid": "^3.3.2"
   }
 }

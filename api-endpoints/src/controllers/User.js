@@ -1,7 +1,7 @@
 import UserModel from '../models/User';
 
 const User = {
-  // create a POST request
+  // create a POST/users request
   create(req, res) {
     if (!req.body.firstName
       && !req.body.lastName
@@ -22,13 +22,13 @@ const User = {
     });
   },
 
-  // create a GET/All request
+  // create a GET/users request
   getAll(req, res) {
     const users = UserModel.findAll();
     return res.status(200).json({ status: 200, users });
   },
 
-  // create a GET/_id request
+  // create a GET/users/:userId request
   getOne(req, res) {
     const user = UserModel.findOne(req.params.id);
     if (!user) {
@@ -40,7 +40,7 @@ const User = {
     return res.status(200).json({ status: 200, user });
   },
 
-  // create a PATCH request
+  // create a PATCH/users/:userId request
   update(req, res) {
     const user = UserModel.findOne(req.param.id);
     if (!user) {
@@ -53,7 +53,7 @@ const User = {
     return res.status(200).send(updateUser);
   },
 
-  // create a DELETE request
+  // create a DELETE/users/:userId request
   delete(req, res) {
     const user = UserModel.findOne(req.param.id);
     if (!user) {
