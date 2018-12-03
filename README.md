@@ -21,5 +21,5 @@ general public. Users can also report on things that needs government interventi
 4. The user gets real-time email notification when Admin changes the status of their record.
 5. The user gets real-time sms notification when Admin changes the status of their record.
 
-## About me
-You can follow me on [Twitter](https://twitter.com/meetKazuki). You can track the project's progress on [Github](https://github.com/meetKazuki/)
+## About this project
+You can follow me on [Twitter](https://twitter.com/meetKazuki). You can track the project's progress on [Github](https://github.com/meetKazuki/), on [PivotalTracker](https://www.pivotaltracker.com/n/projects/2226873), and hosted template on [GH-Pages](https://meetkazuki.github.io/iReporter/)
