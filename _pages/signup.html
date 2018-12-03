@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Create your iReporter Account</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/signup.css">
 </head>
-
 <body>
   <header>
     <nav>
@@ -18,43 +17,48 @@
         <li><a href="#">About</a></li>
       </ul>
     </nav>
+    
+    <a href="index.html" class="header-logo">i<span>Reporter</span></a>
   </header>
-
-  <div class="form-container">
-    <div class="content">
-      <h1>Sign Up for Free</h1>
-      <form>
+  
+  <center>
+    <div class="container">
+      <div class="form-content">
+        <h1>Sign up for Free</h1>
+    
         <div class="top-row">
           <div class="field-wrap">
-            <label>First Name<span class="req">*</span></label>
-            <input type="text" required autocomplete="off">
+            <input type="text" name="first-name" required>
+            <label>
+              First Name<span class="req">*</span>
+            </label>
           </div>
-
+    
           <div class="field-wrap">
-            <label>Last Name<span class="req">*</span></label>
-            <input type="text" required autocomplete="off">
+            <input type="text" name="first-name" required>
+            <label>
+              Last Name<span class="req">*</span>
+            </label>
           </div>
+    
+          <div class="field-wrap">
+            <input type="email" name="email" required>
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+          </div>
+    
+          <div class="field-wrap">
+            <input type="password" name="password" required>
+            <label>
+              Set password<span class="req">*</span>
+            </label>
+          </div>
+    
+          <button type="submit" class="button button-block">Get Started</button>
         </div>
-
-        <div class="field-wrap">
-          <label>Email Address<span class="req">*</span></label>
-          <input type="email" required autocomplete="off">
-        </div>
-
-        <div class="field-wrap">
-          <label>Set a Password<span class="req">*</span></label>
-          <input type="password" required autocomplete="off">
-        </div>
-
-        <div class="field-wrap">
-          <label>Retype Password<span class="req">*</span></label>
-          <input type="password" required autocomplete="off">
-        </div>
-
-        <button type="submit" class="button button-block">Get Started</button>
-      </form>
+      </div>
     </div>
-  </div>
+  </center>
 </body>
-
 </html>
