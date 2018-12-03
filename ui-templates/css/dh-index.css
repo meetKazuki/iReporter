@@ -122,7 +122,7 @@ header .search-area input[type=text] {
   border: none;
   color: #0c907d;
   font-size: 1.3rem;
-  font-weight: 100;
+  font-weight: 400;
   padding: 10px;
   transition: all 0.5s ease-in-out;
   width: 80%;
@@ -148,6 +148,9 @@ header .user-area a {
   padding-right: 20px;
   text-decoration: none;
   vertical-align: top;
+}
+header .user-area a:hover {
+  color: #0c907d;
 }
 /* class === add */
 header .user-area a.notification {
@@ -275,7 +278,7 @@ table tbody {
 }
 table tbody td {
   color: #5ea3a3;
-  padding: 10px 5px;
+  padding: 10px 15px;
 }
 
 /* col-md Styles */
