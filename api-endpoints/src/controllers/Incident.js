@@ -1,4 +1,5 @@
 import IncidentModel from '../models/Incident';
+// import db from '../../db/db';
 
 const Incident = {
   // create a POST/red-flag request
@@ -21,7 +22,10 @@ const Incident = {
   // create a GET/red-flag request
   getAll(req, res) {
     const incidents = IncidentModel.findAll();
-    return res.status(200).json({ status: 200, data: incidents });
+    return res.status(200).json({
+      status: 200,
+      data: incidents,
+    });
   },
 };
 

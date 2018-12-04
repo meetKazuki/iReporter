@@ -11,10 +11,6 @@ router.use(express.json());
 // get all red-flag records
 router.get('/api/v1/red-flags', Incident.getAll);
 // create a red-flag record
-<<<<<<< HEAD
-router.get('/api/v1/red-flags', Incident.getAll);
-=======
 router.post('/api/v1/red-flags', Incident.create);
->>>>>>> develop
 
 export default router;
