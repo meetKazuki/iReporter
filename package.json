@@ -1,0 +1,31 @@
+{
+  "name": "api-endpoints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "babel server.js --out-dir build",
+    "dev-start": "babel-watch server.js"
+  },
+  "keywords": [],
+  "author": "Desmond Edem <kukiito219@gmail.com> (https://meetkazuki.github.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "uuid": "^3.3.2"
+  }
+}
