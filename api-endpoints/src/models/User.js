@@ -18,7 +18,7 @@ class User {
       phoneNumber: data.phoneNumber,
       username: data.username,
       registered: moment.now(),
-      // isAdmin
+      isAdmin: false,
     };
     this.users.push(newUser);
     return newUser;

@@ -18,8 +18,8 @@ class Incident {
       type: data.type,
       location: data.location,
       status: data.status,
-      // images: []
-      // videos: []
+      images: [],
+      videos: [],
       comment: data.comment,
     };
     this.incidents.push(newIncident);
