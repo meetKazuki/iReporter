@@ -1,6 +1,5 @@
 import uuid from 'uuid';
 import moment from 'moment';
-import User from './User';
 
 class Incident {
   // class ctor
@@ -13,7 +12,7 @@ class Incident {
     const newIncident = {
       id: uuid.v4(),
       createdOn: moment.now(),
-      createdBy: User.id,
+      // createdBy: userId
       type: data.type,
       location: data.location,
       status: data.status,
@@ -25,7 +24,7 @@ class Incident {
     return newIncident;
   }
 
-  // findAll incidents method
+  // findAll 'incidents' method
   findAll() {
     return this.incidents;
   }
@@ -50,7 +49,7 @@ class Incident {
   delete(id) {
     const incident = this.findOne(id);
     const index = this.incidents.indexOf(incident);
-    this.incidents.slice(index, 1);
+    this.incidents.splice(index, 1);
     return {};
   }
 }
