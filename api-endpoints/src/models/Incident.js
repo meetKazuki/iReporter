@@ -1,11 +1,9 @@
 import uuid from 'uuid';
 import moment from 'moment';
-import UserID from './User';
 
 class Incident {
   // class ctor
   constructor() {
-    // this.incidents = [new UserID()];
     this.incidents = [];
   }
 
@@ -14,12 +12,11 @@ class Incident {
     const newIncident = {
       id: uuid.v4(),
       createdOn: moment.now(),
-      createdBy: UserID.id,
       type: data.type,
       location: data.location,
       status: data.status,
-      // images: []
-      // videos: []
+      images: [],
+      videos: [],
       comment: data.comment,
     };
     this.incidents.push(newIncident);
