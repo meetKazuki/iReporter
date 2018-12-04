@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "mocha",
     "build": "babel server.js --out-dir build",
-    "dev-start": "babel-watch server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev-start": "babel-watch server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Desmond Edem <kukiito219@gmail.com> (https://meetkazuki.github.io)",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -18,7 +18,10 @@
     "babel-watch": "^2.0.7",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
   },
   "dependencies": {
     "express": "^4.16.4",
