@@ -17,6 +17,12 @@ const Incident = {
       data: incident,
     });
   },
+
+  // create a GET/red-flag request
+  getAll(req, res) {
+    const incidents = IncidentModel.findAll();
+    return res.status(200).json({ status: 200, data: incidents });
+  },
 };
 
 export default Incident;

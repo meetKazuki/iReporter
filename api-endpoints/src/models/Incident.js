@@ -5,7 +5,6 @@ import User from './User';
 class Incident {
   // class ctor
   constructor() {
-    // this.incidents = [new UserID()];
     this.incidents = [];
   }
 
