@@ -27,6 +27,21 @@ const Incident = {
       data: incidents,
     });
   },
+
+  // create a GET/red-flag/:id request
+  getOne(req, res) {
+    const incident = IncidentModel.findOne(req.params.id);
+    if (!incident) {
+      return res.status(404).send({
+        status: 404,
+        message: 'record not found',
+      });
+    }
+    return res.status(200).json({
+      status: 200,
+      data: incident,
+    });
+  },
 };
 
 export default Incident;
