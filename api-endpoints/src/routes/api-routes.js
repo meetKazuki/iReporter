@@ -12,5 +12,7 @@ router.use(express.json());
 router.get('/api/v1/red-flags', Incident.getAll);
 // create a red-flag record
 router.post('/api/v1/red-flags', Incident.create);
+// delete a red-flag record
+router.delete('/api/v1/red-flags/:id', Incident.delete);
 
 export default router;
