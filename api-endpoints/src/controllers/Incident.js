@@ -32,7 +32,7 @@ const Incident = {
   getOne(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
-      return res.status(404).send({
+      return res.status(404).json({
         status: 404,
         message: 'record not found',
       });
@@ -43,11 +43,27 @@ const Incident = {
     });
   },
 
+  // create a PATCH/red-flag/:id request
+  update(req, res) {
+    const incident = IncidentModel.findOne(req.params.id);
+    if (!incident) {
+      return res.status(404).json({
+        status: 404,
+        error: 'record not found',
+      });
+    }
+    const updatedIncident = IncidentModel.update(req.params.id, req.body);
+    return res.status(200).json({
+      status: 200,
+      data: updatedIncident,
+    });
+  },
+
   // create a DELETE/red-flag/:id request
   delete(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
-      return res.status(404).send({
+      return res.status(404).json({
         status: 404,
         message: 'record not found',
       });
