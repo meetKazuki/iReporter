@@ -42,6 +42,22 @@ const Incident = {
       data: incident,
     });
   },
+
+  // create a DELETE/red-flag/:id request
+  delete(req, res) {
+    const incident = IncidentModel.findOne(req.params.id);
+    if (!incident) {
+      return res.status(404).send({
+        status: 404,
+        message: 'record not found',
+      });
+    }
+    const delUser = IncidentModel.delete(req.params.id);
+    return res.status(204).json({
+      status: 204,
+      delUser,
+    });
+  },
 };
 
 export default Incident;
