@@ -28,20 +28,18 @@ const Incident = {
     });
   },
 
-  // create a DELETE/red-flag/:id request
-  delete(req, res) {
+  // create a GET/red-flag/:id request
+  getOne(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
-      return res.status(404).json({
+      return res.status(404).send({
         status: 404,
         message: 'record not found',
       });
     }
-    const delRecord = IncidentModel.delete(req.params.id);
-    return res.status(204).json({
-      status: 204,
-      message: 'record deleted successfully',
-      delRecord,
+    return res.status(200).json({
+      status: 200,
+      data: incident,
     });
   },
 };

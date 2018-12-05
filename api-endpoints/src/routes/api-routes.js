@@ -10,6 +10,8 @@ router.use(express.json());
  */
 // get all red-flag records
 router.get('/api/v1/red-flags', Incident.getAll);
+// get a specific red-flag record
+router.get('/api/v1/red-flags/:id', Incident.getOne);
 // create a red-flag record
 router.post('/api/v1/red-flags', Incident.create);
 // delete a red-flag record
