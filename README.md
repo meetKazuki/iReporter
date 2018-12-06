@@ -29,8 +29,16 @@ general public. Users can also report on things that needs government interventi
 3. Run `npm run dev-start` to start the application
 
 ### Testing
+#### Manual testing
 1. Install Postman to test the endpoints manually.
-2. Run `npm test` to test all the endpoints.
+2. GET /api/v1/red-flags
+3. GET /api/v1/red-flags/:id
+4. POST /api/v1/red-flags
+6. PATCH /api/v1/red-flags/:id
+7. DELETE /api/v1/red-flags/:id
+
+#### Automated test
+> Run `npm test` to test all the endpoints.
 
 ## About this project
 You can track the project's progress on [Github](https://github.com/meetKazuki/iReporter) and [PivotalTracker](https://www.pivotaltracker.com/n/projects/2226873). The UI templates are hosted on [GH-Pages](https://meetkazuki.github.io/iReporter/). You can also follow me on [Twitter](https://twitter.com/meetKazuki)😉.
