@@ -4,66 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Sign In</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous">
+  <title>Sign In to your iReporter Account</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/index.css" />
   <link rel="stylesheet" href="../css/sign-in.css" />
 </head>
 <body>
+  <header>
+    <nav>
+      <ul class="header-nav nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="signup.html">Sign up</a></li>
+      </ul>
+    </nav>
+
+    <a href="index.html" class="header-logo">i<span>Reporter</span></a>
+  </header>
+
   <center>
-    <header>
-      <nav>
-        <ul class="header-nav nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <div class="container">
-      <div id="logo">
-        <a href="index.html" class="logo-img">i<span>Reporter</span></a>
-      </div>
+      <div class="form-content">
+        <h2>Sign in to continue</h2>
 
-      <h1>Welcome Back to iReporter</h1>
+        <div class="top-row">
+          <form>
+            <div class="field-wrap">
+              <input type="text" name="username" required>
+              <label>
+                Email address or username<span class="req">*</span>
+              </label>
+            </div>
 
-      <h3>Sign in to continue</h3>
-      <div id="form-box">
-        <div id="form-img">
-          <img src="../images/faces.png" alt="form-img" width="99" height="99">
+            <div class="field-wrap">
+              <input type="password" name="username" required>
+              <label>
+                Enter password<span class="req">*</span>
+              </label>
+            </div>
+
+            <a href="dh-overview.html">
+              <button type="submit" class="button button-block">Continue</button>
+            </a>
+          </form>
         </div>
-
-        <div id="input-container">
-          <input type="email" name="email" id="" placeholder="Enter your email">
-          <input type="password" placeholder="Enter your password">
-        </div>
-
-        <div>
-          <input type="submit" id="button-2" value="Submit">
-        </div>
-
-        <div id="help-password">
-          <a href="#">Forgot password?</a>
-        </div>
-      </div>
-
-      <div id="help-account">
-        <a href="#">Create an account</a>
-      </div>
-
-      <div>
-        <ul class="social-list">
-          <li>
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-          </li>
-        </ul>
       </div>
     </div>
   </center>
