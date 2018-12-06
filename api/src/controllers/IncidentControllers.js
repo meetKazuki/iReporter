@@ -1,4 +1,4 @@
-import IncidentModel from '../models/Incident';
+import IncidentModel from '../models/IncidentModel';
 // import db from '../../db/db';
 
 const Incident = {

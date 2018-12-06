@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel server.js -d build",
     "dev-start": "babel-watch api-endpoints/server.js",
-    "test": "mocha"
+    "test": "mocha api/test/incidents.test.js --require babel-register --exit",
+    "test-coverage": ""
   },
   "keywords": [],
   "author": "Desmond Edem <kukiito219@gmail.com> (https://meetkazuki.github.io)",
@@ -15,11 +16,15 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "babel-watch": "^2.0.7",
+    "chai": "*",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "mocha": "^5.2.0"
+    "istanbul": "^0.4.5",
+    "mocha": "*",
+    "supertest": "*"
   },
   "dependencies": {
     "express": "^4.16.4",

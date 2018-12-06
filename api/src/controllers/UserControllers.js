@@ -1,4 +1,4 @@
-import UserModel from '../models/User';
+import UserModel from '../models/UserModel';
 
 const User = {
   // create a POST/users request
