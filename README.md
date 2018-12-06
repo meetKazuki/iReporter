@@ -14,7 +14,7 @@ general public. Users can also report on things that needs government interventi
 7. Users can change the geolocation (Lat Long Coordinates) attached to their red-flag or intervention records.
 8. Admin can change the status of a record to either under investigation, rejected (in the event of a false claim) or resolved (in the event that the claim has been investigated and resolved).
 
-### Hopeful features
+### Hopeful features 🔥 🔥
 1. Users can add images to their red-flag or intervention records, to support their claims.
 2. Users can add videos to their red-flag or intervention records, to support their claims.
 3. The application should display a Google Map with Marker showing the red-flag or intervention location.
@@ -33,4 +33,4 @@ general public. Users can also report on things that needs government interventi
 2. Run `npm test` to test all the endpoints.
 
 ## About this project
-You can track the project's progress on [Github](https://github.com/meetKazuki/iReporter), on [PivotalTracker](https://www.pivotaltracker.com/n/projects/2226873), and hosted template on [GH-Pages](https://meetkazuki.github.io/iReporter/). You can also follow me on [Twitter](https://twitter.com/meetKazuki). 
+You can track the project's progress on [Github](https://github.com/meetKazuki/iReporter), on [PivotalTracker](https://www.pivotaltracker.com/n/projects/2226873), and hosted template on [GH-Pages](https://meetkazuki.github.io/iReporter/). You can also follow me on [Twitter](https://twitter.com/meetKazuki)😉. 

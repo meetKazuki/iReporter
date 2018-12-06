@@ -1,5 +1,4 @@
 import uuid from 'uuid';
-import moment from 'moment';
 
 class User {
   // class ctor
@@ -17,7 +16,7 @@ class User {
       email: data.email,
       phoneNumber: data.phoneNumber,
       username: data.username,
-      registered: moment.now(),
+      registered: Date.now(),
       isAdmin: false,
     };
     this.users.push(newUser);

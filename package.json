@@ -4,33 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel server.js --out-dir build",
+    "build": "babel server.js -d build",
     "dev-start": "babel-watch api-endpoints/server.js",
-    "test": "mocha ./api-endpoints/test/routes.test.js --require babel-register"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "Desmond Edem <kukiito219@gmail.com> (https://meetkazuki.github.io)",
   "license": "ISC",
   "devDependencies": {
-    "@babel/preset-env": "^7.2.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
-    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
     "babel-watch": "^2.0.7",
-    "chai": "^4.2.0",
-    "chai-http": "^4.2.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "mocha": "^5.2.0",
-    "should": "^13.2.3",
-    "supertest": "^3.3.0"
+    "mocha": "^5.2.0"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "moment": "^2.22.2",
     "uuid": "^3.3.2"
   }
 }

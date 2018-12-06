@@ -1,18 +1,14 @@
 import uuid from 'uuid';
-import moment from 'moment';
 
 class Incident {
-  // class ctor
   constructor() {
     this.incidents = [];
   }
 
-  // create new incident method
   create(data) {
     const newIncident = {
       id: uuid.v4(),
-      createdOn: moment.now(),
-      // createdBy: userId
+      createdOn: Date.now(),
       type: data.type,
       location: data.location,
       status: data.status,
@@ -24,17 +20,14 @@ class Incident {
     return newIncident;
   }
 
-  // findAll 'incidents' method
   findAll() {
     return this.incidents;
   }
 
-  // findOne incident method
   findOne(id) {
     return this.incidents.find(incident => incident.id === id);
   }
 
-  // update incident method
   update(id, data) {
     const incident = this.findOne(id);
     const index = this.incidents.indexOf(incident);
@@ -45,7 +38,6 @@ class Incident {
     return this.incidents[index];
   }
 
-  // delete incident method
   delete(id) {
     const incident = this.findOne(id);
     const index = this.incidents.indexOf(incident);
