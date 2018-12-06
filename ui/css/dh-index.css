@@ -56,37 +56,33 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* *** *** * Global Styles * *** *** */
+/* *** *** * Side-Menu Styles * *** *** */
 #side-menu {
-  background: #4a4a48;
-  height: 100vh;
+  background: #625757;
   position: absolute;
+  min-height: 100vh;
   width: 280px;
 }
 #side-menu nav {
   padding-top: 100px;
 }
 #side-menu nav a {
-  color: #98ccd3;
+  color: #f7f7f7;
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   padding: 15px 30px;
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 #side-menu nav a:hover {
-  background: #364e68;
-  border-left: 5px solid #c19898;
+  background: #179b77;
+  border-left: 5px solid #20716a;
   padding: 15px 30px 15px 25px;
 }
 #side-menu nav a .far,
 #side-menu nav a .fas {
-  color: #ebf0f6;
-}
-#side-menu nav a .far,
-#side-menu nav a .fas {
-  color: #488b8f;
+  color: #fafafa;
   display: inline-block;
   font-size: 1rem;
   margin-right: 0.8rem;
@@ -95,23 +91,20 @@ body {
   width: 30px;
 }
 #side-menu nav a.active {
-  background: #9d8f8f;
-  border-left: 5px solid #c19898;
-  padding: 15px 30px 15px 25px
-}
-#side-menu nav a.active .far,
-#side-menu nav a.active .fas {
-  color: #d34c26;
+  background: #179b77;
+  border-left: 5px solid #20716a;
+  padding: 15px 30px 15px 25px;
 }
 
 /* *** *** * Header Styles * *** *** */
 header {
   background: #fff;
-  margin-left: 280px;
-  padding: 5px;
+  margin-left: 290px;
+  padding: 3px;
 }
 header .search-area {
   display: inline-block;
+  padding-left: 3px;
   width: 50%;
 }
 header .search-area .fas {
@@ -122,8 +115,8 @@ header .search-area input[type=text] {
   border: none;
   color: #0c907d;
   font-size: 1.3rem;
-  font-weight: 100;
-  padding: 10px;
+  font-weight: 400;
+  padding: 7px;
   transition: all 0.5s ease-in-out;
   width: 80%;
 }
@@ -149,6 +142,9 @@ header .user-area a {
   text-decoration: none;
   vertical-align: top;
 }
+header .user-area a:hover {
+  color: #0c907d;
+}
 /* class === add */
 header .user-area a.notification {
   font-size: 20px;
@@ -156,7 +152,7 @@ header .user-area a.notification {
   position: relative;
 }
 header .user-area a.notification .circle {
-  background: red;
+  background: #0c907d;
   border-radius: 50%;
   color: #fff;
   display: inline-block;
@@ -165,7 +161,7 @@ header .user-area a.notification .circle {
   left: 5px;
   position: absolute;
   text-align: center;
-  /* top: 3px; */
+  top: -1px;
   width: 12px;
 }
 header .user-area a .user-image {
@@ -275,17 +271,17 @@ table tbody {
 }
 table tbody td {
   color: #5ea3a3;
-  padding: 10px 5px;
+  padding: 10px 15px;
 }
 
 /* col-md Styles */
-.col-md-4 {
+.column-med {
   display: inline-block;
   float: left;
   padding: 0 15px;
   width: 33.33%;
 }
-.col-md-8 {
+.column-lg {
   display: inline-block;
   float: left;
   padding: 0 15px;

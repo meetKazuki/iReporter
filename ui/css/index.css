@@ -95,7 +95,7 @@ header {
 /* nav-menu styles */
 .header-nav {
   float: right;
-  padding: 3vh 60px 0 0;
+  padding: 2vh 10px 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -117,16 +117,16 @@ header {
 }
 .nav-links a:hover,
 .nav-links a:active {
-  color: #9a9b94;
+  color: #179b77;
 }
 /* header logo styles */
 .header-logo {
-  color: #52524e;
+  color: #1ab188;
   display: block;
   font-style: oblique;
   font-size: 1.5rem;
   font-weight: 900;
-  height: 10vh;
+  /* height: 5vh; */
   left: 20px;
   padding: 10px;
   position: relative;
@@ -145,7 +145,7 @@ header {
 /* *** *** *** Footer Styles *** *** *** */
 footer {
   background-color: #625757;
-  padding: 5vh 0 10vh;
+  /* padding: 5vh 0 10vh; */
   text-align: center;
 }
 footer p {
@@ -176,7 +176,7 @@ footer p {
   width: 1.5em;
 }
 .social-link:hover {
-  color: #bcbab8;
+  color: #179b77;
   transition: all 0.3s ease;
 }
 
@@ -184,7 +184,7 @@ footer p {
 .full-hero {
   background-color: #bcbab8;
   background-size: cover;
-  height: 90vh;
+  height: 95vh;
   padding-top: 10vh;
 }
 .full-hero:after {
@@ -243,7 +243,7 @@ footer p {
 }
 .hero-content a:hover,
 .hero-content a:active {
-  background-color: #625757;
+  background-color: #179b77;
   transition: all 0.3s ease-in;
 }
 
@@ -274,7 +274,6 @@ footer p {
   width: 33%;
 }
 .feature h3 {
-  /* color: */
   font-size: 1.2em;
   margin: 35px 0 1em;
   text-align: justify;
