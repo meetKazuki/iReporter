@@ -2,10 +2,9 @@ import IncidentModel from '../models/IncidentModel';
 // import db from '../../db/db';
 
 const Incident = {
-  // create a POST/red-flag request
   create(req, res) {
-    if (!req.body.type && !req.body.location && !req.body.status
-      && !req.body.comment) {
+    if (!req.body.type || !req.body.location || !req.body.status
+      || !req.body.comment) {
       return res.status(400).json({
         status: 400,
         message: 'All fields are required',
@@ -19,7 +18,6 @@ const Incident = {
     });
   },
 
-  // create a GET/red-flag request
   getAll(req, res) {
     const incidents = IncidentModel.findAll();
     return res.status(200).json({
@@ -28,7 +26,6 @@ const Incident = {
     });
   },
 
-  // create a GET/red-flag/:id request
   getOne(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
@@ -43,7 +40,6 @@ const Incident = {
     });
   },
 
-  // create a PATCH/red-flag/:id request
   update(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
@@ -59,7 +55,17 @@ const Incident = {
     });
   },
 
-  // create a DELETE/red-flag/:id request
+  updateLocation(req, res) {
+    const incident = IncidentModel.findOne(req.params.id);
+    if (!incident) {
+      return res.status(404).json({
+        status: 404,
+        error: 'record not found',
+      });
+    }
+    const updatedIncidentLoc = IncidentModel.update(req.params.id,)
+  }
+
   delete(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
