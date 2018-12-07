@@ -17,8 +17,8 @@ td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,header,
-hgroup,menu,nav,section {
+article, aside, details, figcaption, figure, footer, 
+header, hgroup, menu, nav, section {
   display: block; 
 }
 
@@ -59,7 +59,7 @@ body {
 /* *** *** * Side-Menu Styles * *** *** */
 #side-menu {
   background: #625757;
-  min-height: 100vh;
+  min-height: 120vh;
   position: absolute;
   width: 280px;
 }
@@ -161,4 +161,118 @@ header .user-area a.notification .circle {
   text-align: center;
   top: -1px;
   width: 12px;
+}
+
+/* *** *** * Main Content Styles * *** *** */
+.container {
+  margin-top: 2vh;
+  margin-left: 290px;
+}
+.record-card {
+  background: #fff;
+  display: flex;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  margin: 1rem auto;
+  margin-bottom: 1.6%;
+  line-height: 1.4;
+  font-family: 'Lato', sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 55%;
+}
+.record-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+}
+.record-card .description h1,
+.record-card .description h2, {
+  font-family: 'Roboto';
+}
+.record-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.record-card .description h2 {
+  font-size: .7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #20716a;
+  margin-top: 5px;
+}
+.record-card .description .control {
+  text-align: right;
+}
+.record-card .description .control button {
+  border: 0;
+  border-color: #7c7575;
+  border-radius: 5px 5px 5px 5px;
+  border-width: 1px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-right: 4px;
+  outline: none;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  width: 15%;
+}
+.record-card .description .control button:after {
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.record-card .description .control button:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.record-card p {
+  font-size: 16px;
+  position: relative;
+  margin: 1rem 0 0;
+}
+.record-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.record-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #0c907d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.loc {
+  padding-left: 10px;
+}
+.blue {
+  background: #05004E;
+}
+.red {
+  background: #db2d43;
+}
+.type-bluish {
+  background: #264e70;
+  padding: 1px;
+  border-radius: 2px 2px 2px 2px;
+  width: 90px;
+  color: #f2f4fb;
+}
+.type-reddish {
+  background: #db2d43;
+  color: #f2f4fb;
+  padding: 1px;
+  border-radius: 2px 2px 2px 2px;
+  width: 65px;
 }
