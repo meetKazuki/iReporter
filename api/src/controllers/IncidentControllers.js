@@ -55,6 +55,17 @@ const Incident = {
     });
   },
 
+  updateLocation(req, res) {
+    const incident = IncidentModel.findOne(req.params.id);
+    if (!incident) {
+      return res.status(404).json({
+        status: 404,
+        error: 'record not found',
+      });
+    }
+    const updatedIncidentLoc = IncidentModel.update(req.params.id,)
+  }
+
   delete(req, res) {
     const incident = IncidentModel.findOne(req.params.id);
     if (!incident) {
