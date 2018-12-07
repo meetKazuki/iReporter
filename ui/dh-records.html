@@ -25,47 +25,54 @@
     </div>
 
     <div class="user-area">
-      <!-- <a href="../index.html">HOME</a> -->
-      <a href="#"><i class="fas fa-plus"></i></a>
+      <a href="../index.html">HOME</a>
+      <a href="#"><i class="fas fa-plus" id="button-modal"></i></a>
       <a href="#" class="notification"><i class="far fa-bell"></i><span class="circle">3</span></a>
       <a href="signin.html">SIGN OUT</a>
     </div>
   </header>
 
-  <!-- <div class="form-container">
-    <h2>Create your Complaints</h2>
-
-    <div class="form-content top-row">
-      <div class="record-title field-wrap">
-        <input type="text" required>
-        <label>Title of your complaint</label>
-      </div>
-
-      <div class="record-desc field-wrap">
-        <textarea></textarea>
-        <label>Enter description here</label>
-      </div>
-
-      <div class="record-location field-wrap">
-        <input type="text">
-        <label>Enter location</label>
-      </div>
-      
-      <select class="record-type field-wrap">
-        <option value="">Type of complaint</option>
-        <option value="">Red-flag</option>
-        <option value="">Intervention</option>
-      </select>
-
-      <div class="button-container field-wrap">
-        <button class="button">Cancel</button>
-        <button class="button">Submit</button>
+<div class="form-container" id="display-modal">
+  <form action="">
+    <div class="record-block">
+      <div class="record">
+        <input type="text" placeholder="Enter the title summary">
       </div>
     </div>
-  </div> -->
+
+    <div class="record-block">
+      <div class="record">
+        <input type="text" placeholder="Enter location">
+      </div>
+    </div>
+
+    <div class="record-block">
+      <div class="record">
+        <select name="" id="">
+          <option value="record-type">Type of Intervention</option>
+          <option value="intervention">Intervention</option>
+          <option value="red-flag">Red-flag</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="record-block">
+      <div class="record">
+        <textarea placeholder="Describe you issue"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="button-block">
+        <button id="close-button">Cancel</button>
+        <button>Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
 
   <main class="container">
-
     <div class="record-card">
       <div class="description">
         <h1>My Boss Launders Money</h1>
@@ -116,5 +123,6 @@
       </div>
     </div>
   </main>
+  <script src="js/record-form.js"></script>
 </body>
 </html>
