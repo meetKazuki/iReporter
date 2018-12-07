@@ -32,47 +32,89 @@
     </div>
   </header>
 
-  <!-- <center>
-    <div class="record-container">
-      <h2>Create your complaints</h2>
+  <!-- <div class="form-container">
+    <h2>Create your Complaints</h2>
 
-      <div class="top-row">
-        <div class="field-wrap">
-          <input type="text" required>
-          <label>Enter the title of your complaint</label>
-        </div>
+    <div class="form-content top-row">
+      <div class="record-title field-wrap">
+        <input type="text" required>
+        <label>Title of your complaint</label>
       </div>
 
-      <div class="top-row">
-        <div class="field-wrap">
-          <input type="text" required>
-          <label>Describe your issue</label>
-        </div>
+      <div class="record-desc field-wrap">
+        <textarea></textarea>
+        <label>Enter description here</label>
       </div>
 
-      <div class="top-row">
-        <div class="field-wrap">
-          <input type="text" required>
-          <label>Location</label>
-        </div>
+      <div class="record-location field-wrap">
+        <input type="text">
+        <label>Enter location</label>
       </div>
+      
+      <select class="record-type field-wrap">
+        <option value="">Type of complaint</option>
+        <option value="">Red-flag</option>
+        <option value="">Intervention</option>
+      </select>
 
-      <div>
-        <div class="select-style">
-          <select>
-            <option>Complaint type</option>
-            <option>Red-flag</option>
-            <option>Intervention</option>
-          </select>
-        </div>
-      </div>
-
-      <div>
-        <button>Cancel</button>
-        <button>Submit</button>
+      <div class="button-container field-wrap">
+        <button class="button">Cancel</button>
+        <button class="button">Submit</button>
       </div>
     </div>
-  </center> -->
+  </div> -->
 
+  <main class="container">
+
+    <div class="record-card">
+      <div class="description">
+        <h1>My Boss Launders Money</h1>
+        <h2><i class="fas fa-map-marker-alt"></i><span class="loc">Osborn Towers, Ikoyi</span></h2>
+        <h3 class="type-reddish">Red-flag</h3>
+        <p>Financial impropriety is being carried out in my establishment.
+          I believe this establishment might be a front for serious drug racketeering
+          and money laundering. The account books are falsified. Please investigate
+        </p>
+        <div class="control">
+          <button class="blue">Update</button>
+          <button class="red">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="record-card">
+      <div class="description">
+        <h1>We don't have Light</h1>
+        <h2><i class="fas fa-map-marker-alt"></i><span class="loc">12 McNeil Street Sabo-Yaba, Lagos</span></h2>        
+        <h3 class="type-bluish">Intervention</h3>
+        <p>For the past 4 months, we don't have light. The transformer blew
+          up one day and everything went to smokes. All effort to rectify it
+          has been met with no response. Come to our aid. Power outage has caused
+          a lot of inconveniences for the residents of this area.
+        </p>
+        <div class="control">
+          <button class="blue">Update</button>
+          <button class="red">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="record-card">
+      <div class="description">
+        <h1>#NextLevel Daura</h1>
+        <h2><i class="fas fa-map-marker-alt"></i><span class="loc">N/A</span></h2>        
+        <h3 class="type-bluish">Intervention</h3>
+        <p>
+          He must go back. Why is he still there? Take back our rights, take back
+          our progress. Send this old hags home! We own this. Let's make our country
+          great.
+        </p>
+        <div class="control">
+          <button class="blue">Update</button>
+          <button class="red">Delete</button>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
