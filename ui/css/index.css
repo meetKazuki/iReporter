@@ -95,7 +95,7 @@ header {
 /* nav-menu styles */
 .header-nav {
   float: right;
-  padding: 3vh 10px 0 0;
+  padding: 2vh 10px 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -121,7 +121,7 @@ header {
 }
 /* header logo styles */
 .header-logo {
-  color: #52524e;
+  color: #1ab188;
   display: block;
   font-style: oblique;
   font-size: 1.5rem;
@@ -176,7 +176,7 @@ footer p {
   width: 1.5em;
 }
 .social-link:hover {
-  color: #bcbab8;
+  color: #179b77;
   transition: all 0.3s ease;
 }
 
@@ -243,7 +243,7 @@ footer p {
 }
 .hero-content a:hover,
 .hero-content a:active {
-  background-color: #625757;
+  background-color: #179b77;
   transition: all 0.3s ease-in;
 }
 
@@ -274,7 +274,6 @@ footer p {
   width: 33%;
 }
 .feature h3 {
-  /* color: */
   font-size: 1.2em;
   margin: 35px 0 1em;
   text-align: justify;
