@@ -47,3 +47,7 @@ general public. Users can also report on things that needs government interventi
 
 ## About this project
 You can track the project's progress on [Github](https://github.com/meetKazuki/iReporter) and [PivotalTracker](https://www.pivotaltracker.com/n/projects/2226873). The UI templates are hosted on [GH-Pages](https://meetkazuki.github.io/iReporter/). You can also follow me on [Twitter](https://twitter.com/meetKazuki)😉.
+
+<!-- SET DATABASE_URL=postgresql://postgres:@127.0.0.1:5432/ireporter_dev -->
+<!-- EXPORT DATABASE_URL=postgresql://postgres:@127.0.0.1:5432/ireporter_dev -->
+export DATABASE_URL=postgresql://postgres@127.0.0.1:5432/ireporter_dev
