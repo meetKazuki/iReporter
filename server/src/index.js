@@ -1,7 +1,9 @@
+import debug from 'debug';
 import express from 'express';
 import router from './routes/routes';
 
 const app = express();
+const Debug = debug('dev');
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
@@ -23,6 +25,6 @@ app.all('*', (req, res) => {
   });
 });
 
-app.listen(PORT, () => console.log(`Server running at ${PORT}.`));
+app.listen(PORT, () => Debug(`Server running at ${PORT}.`));
 
 export default app;

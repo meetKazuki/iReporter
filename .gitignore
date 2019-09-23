@@ -83,6 +83,7 @@ typings/
 USER_LOGON.md
 .DS_Store
 .vscode/
-dist/
 build/
+dist/
+docs/iReporter_-_Challenge_1___2.pdf
 uploads
