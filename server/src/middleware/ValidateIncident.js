@@ -1,4 +1,4 @@
-import IncidentModel from '../models/IncidentModel';
+// import IncidentModel from '../models/IncidentModel';
 
 class validateIncident {
   static validatePostRequest(req, res, next) {

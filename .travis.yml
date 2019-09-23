@@ -1,6 +1,9 @@
 language: node_js
 node_js:
   - "stable"
+cache:
+  directories:
+    - node_modules
 env:
   global:
     - CC_TEST_REPORTER_ID=c0146d00052aeaaa9dff074f9bec43fb1a78dac262c4f4326a50ee886b919227
@@ -8,7 +11,12 @@ env:
 install:
   - npm install
 
+services:
+  - postgresql
+
 before_script:
+  - psql -c 'DROP DATABASE IF EXISTS ireporter_test;' -U postgres
+  - psql -c 'CREATE DATABASE ireporter_test;' -U postgres
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build

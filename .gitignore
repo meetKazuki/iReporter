@@ -86,4 +86,5 @@ USER_LOGON.md
 build/
 dist/
 docs/iReporter_-_Challenge_1___2.pdf
+package-lock.json
 uploads
