@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/meetKazuki/iReporter.svg?branch=develop)](https://travis-ci.org/meetKazuki/iReporter)
 [![Coverage Status](https://coveralls.io/repos/github/meetKazuki/iReporter/badge.svg?branch=develop)](https://coveralls.io/github/meetKazuki/iReporter?branch=develop)
-[![Maintainability](https://api.codeclimate.com/v1/badges/116de88787dcce4de78a/maintainability)](https://codeclimate.com/github/meetKazuki/iReporter/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/116de88787dcce4de78a/test_coverage)](https://codeclimate.com/github/meetKazuki/iReporter/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/664223fdb47bca64404d/maintainability)](https://codeclimate.com/github/meetKazuki/iReporter/maintainability)
+
 
 ## Project Description
 iReporter enables any/every citizen to bring any form of corruption to the notice of appropriate authorities and the
