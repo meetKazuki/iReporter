@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { hashPassword } from '../../helpers/auth';
 
 module.exports = (sequelize, DataTypes) => {

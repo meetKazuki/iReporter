@@ -13,10 +13,10 @@
     "db:seed": "sequelize db:seed:all",
     "db:reset": "npm run db:migrate:undo && npm run db:migrate",
     "lint": "eslint \"**/*.js\" --fix",
-    "postinstall": "npm run build && npm run migrate",
+    "postinstall": "npm run build && npm run db:migrate",
     "start": "node ./build/index.js",
     "start:dev": "set DEBUG=dev && nodemon --exec babel-node ./server/src/index.js",
-    "test": "cross-env NODE_ENV=test nyc mocha --require @babel/register --timeout 1000 ./server/test/* --exit"
+    "test": "cross-env NODE_ENV=test npm run db:reset && cross-env NODE_ENV=test nyc mocha ./server/test/ --require @babel/register --require @babel/polyfill --exit"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
     "bcryptjs": "^2.4.3",
+    "date-fns": "^2.2.1",
     "debug": "^4.1.1",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",

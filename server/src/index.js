@@ -1,6 +1,7 @@
+import '@babel/polyfill';
 import debug from 'debug';
 import express from 'express';
-import router from './routes/routes';
+import router from './routes';
 
 const app = express();
 const Debug = debug('dev');
