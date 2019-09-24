@@ -9,8 +9,8 @@ expect();
 const baseURI = '/api/v1/auth';
 
 describe('Auth routes', () => {
-  context('Signup routes', () => {
-    it('should successfully post to /auth/signup', (done) => {
+  context('Signup route', () => {
+    it('should successfully POST to /auth/signup', (done) => {
       chai
         .request(app)
         .post(`${baseURI}/signup`)
@@ -56,6 +56,56 @@ describe('Auth routes', () => {
           expect(res).to.have.status(409);
           expect(status).to.eql('error');
           expect(message).to.eql('Username already in use');
+          done(err);
+        });
+    });
+  });
+
+  context('Signin route', () => {
+    it('should successfully POST to /auth/signin', (done) => {
+      chai
+        .request(app)
+        .post(`${baseURI}/signin`)
+        .send({ email: user.email, password: user.password })
+        .end((err, res) => {
+          const { status, message, data } = res.body;
+          expect(res).to.have.status(200);
+          expect(status).to.eql('success');
+          expect(message).to.eql('Signin successful!');
+          expect(data).to.be.an('object');
+          expect(data).to.have.property('token');
+          expect(data).to.have.property('user');
+          expect(data.user).to.have.property('id');
+          expect(data.user).to.have.property('email');
+          expect(data.user).not.to.have.property('password');
+          done(err);
+        });
+    });
+
+    specify('error if user signs up with incorrect email', (done) => {
+      chai
+        .request(app)
+        .post(`${baseURI}/signin`)
+        .send({ email: 'banshee@ande.com', password: user.password })
+        .end((err, res) => {
+          const { status, message } = res.body;
+          expect(res).to.have.status(401);
+          expect(status).to.eql('error');
+          expect(message).to.eql('Email/password is incorrect');
+          done(err);
+        });
+    });
+
+    specify('error if user signs up with incorrect password', (done) => {
+      chai
+        .request(app)
+        .post(`${baseURI}/signin`)
+        .send({ email: user.email, password: 'wrong password' })
+        .end((err, res) => {
+          const { status, message } = res.body;
+          expect(res).to.have.status(401);
+          expect(status).to.eql('error');
+          expect(message).to.eql('Email/password is incorrect');
           done(err);
         });
     });

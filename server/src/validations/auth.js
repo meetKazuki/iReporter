@@ -44,7 +44,7 @@ const signupSchema = [
     .withMessage('Password must be alphanumeric and not be less than 8 characters'),
 ];
 
-const loginSchema = [
+const signinSchema = [
   check('email')
     .exists()
     .withMessage('Email is required')
@@ -54,6 +54,7 @@ const loginSchema = [
     .withMessage('Email must not be empty')
     .isEmail()
     .withMessage('Must be an email address'),
+
   check('password')
     .exists()
     .withMessage('Password is required')
@@ -73,23 +74,25 @@ const forgotPasswordSchema = [
 
 const resetPasswordSchema = [
   check('password')
-    .not().isEmpty({ ignore_whitespace: true })
+    .not()
+    .isEmpty({ ignore_whitespace: true })
     .withMessage('Password is required')
     .trim()
     .isLength({ min: 8, max: 32 })
     .withMessage('Password should be between 8 to 32 characters'),
-  check('confirmPassword')
-    .custom((value, { req }) => {
-      const { password } = req.body;
-      if (value !== password) {
-        throw new Error('Password confirmation does not match password');
-      }
-      return true;
-    })];
+
+  check('confirmPassword').custom((value, { req }) => {
+    const { password } = req.body;
+    if (value !== password) {
+      throw new Error('Password confirmation does not match password');
+    }
+    return true;
+  }),
+];
 
 export {
   signupSchema,
-  loginSchema,
+  signinSchema,
   forgotPasswordSchema,
   resetPasswordSchema,
 };

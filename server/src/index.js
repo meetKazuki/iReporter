@@ -1,11 +1,18 @@
 import '@babel/polyfill';
 import debug from 'debug';
 import express from 'express';
+import logger from 'morgan';
 import router from './routes';
 
 const app = express();
+
+const { NODE_ENV, PORT } = process.env;
+if (NODE_ENV === 'development' || NODE_ENV === 'production') {
+  app.use(logger('dev'));
+}
+
 const Debug = debug('dev');
-const PORT = process.env.PORT || 3000;
+const port = PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -26,6 +33,6 @@ app.all('*', (req, res) => {
   });
 });
 
-app.listen(PORT, () => Debug(`Server running at ${PORT}.`));
+app.listen(PORT, () => Debug(`Server running at ${port}.`));
 
 export default app;
