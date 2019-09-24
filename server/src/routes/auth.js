@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import authController from '../controllers/auth';
 import authentication from '../middleware/auth';
-import { signupSchema } from '../validations/auth';
+import { signupSchema, signinSchema } from '../validations/auth';
 import validator from '../middleware/validator';
 
 const { checkExistingUser } = authentication;
@@ -16,10 +16,10 @@ router.post(
   signup,
 );
 
-/* router.post(
+router.post(
   '/signin',
   validator(signinSchema),
   signin,
-); */
+);
 
 export default router;
